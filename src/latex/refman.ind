@@ -1,0 +1,384 @@
+\begin{theindex}
+
+  \item {$\sim $\discretionary {-}{}{}Laser\discretionary {-}{}{}Dev}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{10}
+  \item {$\sim $\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{16}
+  \item {$\sim $\discretionary {-}{}{}Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{13}
+  \item {$\sim $\discretionary {-}{}{}Serial\discretionary {-}{}{}Com}
+    \subitem {Serial\discretionary {-}{}{}Com}, \hyperpage{22}
+
+  \indexspace
+
+  \item {arrow\discretionary {-}{}{}\_\discretionary {-}{}{}released}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{16}
+  \item {auto\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}3}
+    \subitem {Calibrate}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Calibrate}, \hyperpage{7}
+    \subitem {auto\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}3}, 
+		\hyperpage{8}
+    \subitem {Calibrate}, \hyperpage{7}
+    \subitem {get\discretionary {-}{}{}E\discretionary {-}{}{}Coords}, 
+		\hyperpage{8}
+    \subitem {get\discretionary {-}{}{}H\discretionary {-}{}{}Coords}, 
+		\hyperpage{8}
+    \subitem {is\discretionary {-}{}{}Configured}, \hyperpage{8}
+    \subitem {set\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}1}, 
+		\hyperpage{8}
+    \subitem {set\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}2}, 
+		\hyperpage{9}
+    \subitem {set\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}3}, 
+		\hyperpage{9}
+    \subitem {set\discretionary {-}{}{}Time}, \hyperpage{9}
+  \item {Calibrate.\discretionary {-}{}{}cpp}, \hyperpage{23}
+  \item {Calibrate.\discretionary {-}{}{}hpp}, \hyperpage{23}
+  \item {com\discretionary {-}{}{}G\discretionary {-}{}{}O\discretionary {-}{}{}T\discretionary {-}{}{}O}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{16}
+  \item {com\discretionary {-}{}{}P\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}Y}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{16}
+  \item {com\discretionary {-}{}{}T\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}N}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{17}
+  \item {com\discretionary {-}{}{}W\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}T}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{17}
+  \item {compile\discretionary {-}{}{}Script}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{16}
+  \item {configure\discretionary {-}{}{}Gui}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{13}
+  \item {create\discretionary {-}{}{}Dialog\discretionary {-}{}{}Content}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {debug\discretionary {-}{}{}\_\discretionary {-}{}{}received}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{17}
+  \item {debug\discretionary {-}{}{}\_\discretionary {-}{}{}send}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+  \item {deinit}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{13}
+  \item {down\discretionary {-}{}{}Pressed}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {error}
+    \subitem {Serial\discretionary {-}{}{}Com}, \hyperpage{22}
+  \item {exec\discretionary {-}{}{}Script}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {get\discretionary {-}{}{}Call\discretionary {-}{}{}Order}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{13}
+  \item {get\discretionary {-}{}{}E\discretionary {-}{}{}Coords}
+    \subitem {Calibrate}, \hyperpage{8}
+  \item {get\discretionary {-}{}{}H\discretionary {-}{}{}Coords}
+    \subitem {Calibrate}, \hyperpage{8}
+  \item {get\discretionary {-}{}{}Plugin\discretionary {-}{}{}Info}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium\discretionary {-}{}{}Plugin\discretionary {-}{}{}Interface}, 
+		\hyperpage{14}
+  \item {get\discretionary {-}{}{}Pos}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+  \item {get\discretionary {-}{}{}Stel\discretionary {-}{}{}Module}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium\discretionary {-}{}{}Plugin\discretionary {-}{}{}Interface}, 
+		\hyperpage{14}
+  \item {go\discretionary {-}{}{}To}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{17}
+  \item {gt}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{17}
+  \item {gui/\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog.\discretionary {-}{}{}cpp}, 
+		\hyperpage{24}
+  \item {gui/\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog.\discretionary {-}{}{}hpp}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {init}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{13}
+  \item {init\discretionary {-}{}{}Device}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{18}
+  \item {is\discretionary {-}{}{}Configured}
+    \subitem {Calibrate}, \hyperpage{8}
+
+  \indexspace
+
+  \item {laser}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{18}
+  \item {Laser\discretionary {-}{}{}Dev}, \hyperpage{9}
+    \subitem {$\sim $\discretionary {-}{}{}Laser\discretionary {-}{}{}Dev}, 
+		\hyperpage{10}
+    \subitem {debug\discretionary {-}{}{}\_\discretionary {-}{}{}send}, 
+		\hyperpage{11}
+    \subitem {get\discretionary {-}{}{}Pos}, \hyperpage{11}
+    \subitem {init}, \hyperpage{11}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{10}
+    \subitem {laser\discretionary {-}{}{}Off}, \hyperpage{11}
+    \subitem {laser\discretionary {-}{}{}On}, \hyperpage{11}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{10}
+    \subitem {move}, \hyperpage{11}
+    \subitem {movx}, \hyperpage{11}
+    \subitem {movy}, \hyperpage{11}
+    \subitem {pos\discretionary {-}{}{}\_\discretionary {-}{}{}received}, 
+		\hyperpage{11}
+    \subitem {process\discretionary {-}{}{}Error}, \hyperpage{11}
+    \subitem {process\discretionary {-}{}{}Timeout}, \hyperpage{12}
+    \subitem {set\discretionary {-}{}{}Port\discretionary {-}{}{}Name}, 
+		\hyperpage{12}
+    \subitem {sread}, \hyperpage{12}
+    \subitem {stop}, \hyperpage{12}
+  \item {Laser\discretionary {-}{}{}Dev.\discretionary {-}{}{}cpp}, 
+		\hyperpage{25}
+  \item {Laser\discretionary {-}{}{}Dev.\discretionary {-}{}{}hpp}, 
+		\hyperpage{25}
+  \item {laser\discretionary {-}{}{}Off}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+  \item {laser\discretionary {-}{}{}On}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+  \item {laser\discretionary {-}{}{}Toggled}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{18}
+  \item {left\discretionary {-}{}{}Pressed}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{18}
+  \item {lo}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{18}
+
+  \indexspace
+
+  \item {move}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{18}
+  \item {movx}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+  \item {movy}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+
+  \indexspace
+
+  \item {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{15}
+    \subitem {$\sim $\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{16}
+    \subitem {arrow\discretionary {-}{}{}\_\discretionary {-}{}{}released}, 
+		\hyperpage{16}
+    \subitem {com\discretionary {-}{}{}G\discretionary {-}{}{}O\discretionary {-}{}{}T\discretionary {-}{}{}O}, 
+		\hyperpage{16}
+    \subitem {com\discretionary {-}{}{}P\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}Y}, 
+		\hyperpage{16}
+    \subitem {com\discretionary {-}{}{}T\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}N}, 
+		\hyperpage{17}
+    \subitem {com\discretionary {-}{}{}W\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}T}, 
+		\hyperpage{17}
+    \subitem {compile\discretionary {-}{}{}Script}, \hyperpage{16}
+    \subitem {create\discretionary {-}{}{}Dialog\discretionary {-}{}{}Content}, 
+		\hyperpage{17}
+    \subitem {debug\discretionary {-}{}{}\_\discretionary {-}{}{}received}, 
+		\hyperpage{17}
+    \subitem {down\discretionary {-}{}{}Pressed}, \hyperpage{17}
+    \subitem {exec\discretionary {-}{}{}Script}, \hyperpage{17}
+    \subitem {go\discretionary {-}{}{}To}, \hyperpage{17}
+    \subitem {gt}, \hyperpage{17}
+    \subitem {init\discretionary {-}{}{}Device}, \hyperpage{18}
+    \subitem {laser}, \hyperpage{18}
+    \subitem {laser\discretionary {-}{}{}Toggled}, \hyperpage{18}
+    \subitem {left\discretionary {-}{}{}Pressed}, \hyperpage{18}
+    \subitem {lo}, \hyperpage{18}
+    \subitem {move}, \hyperpage{18}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{16}
+    \subitem {open\discretionary {-}{}{}Script}, \hyperpage{18}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{16}
+    \subitem {pause}, \hyperpage{18}
+    \subitem {pl}, \hyperpage{19}
+    \subitem {play}, \hyperpage{19}
+    \subitem {play\discretionary {-}{}{}Audio}, \hyperpage{19}
+    \subitem {play\discretionary {-}{}{}Clicked}, \hyperpage{19}
+    \subitem {pos\discretionary {-}{}{}\_\discretionary {-}{}{}received}, 
+		\hyperpage{19}
+    \subitem {retranslate}, \hyperpage{19}
+    \subitem {right\discretionary {-}{}{}Pressed}, \hyperpage{19}
+    \subitem {save\discretionary {-}{}{}Script}, \hyperpage{19}
+    \subitem {select\discretionary {-}{}{}Device}, \hyperpage{19}
+    \subitem {set\discretionary {-}{}{}Reference}, \hyperpage{20}
+    \subitem {set\discretionary {-}{}{}Signals}, \hyperpage{20}
+    \subitem {set\discretionary {-}{}{}Volume}, \hyperpage{20}
+    \subitem {show\discretionary {-}{}{}Message}, \hyperpage{20}
+    \subitem {stop}, \hyperpage{20}
+    \subitem {stop\discretionary {-}{}{}Click}, \hyperpage{20}
+    \subitem {up\discretionary {-}{}{}Pressed}, \hyperpage{20}
+    \subitem {waitforsec}, \hyperpage{20}
+    \subitem {wt}, \hyperpage{21}
+  \item {open\discretionary {-}{}{}Script}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{18}
+  \item {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{12}
+    \subitem {$\sim $\discretionary {-}{}{}Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{13}
+    \subitem {configure\discretionary {-}{}{}Gui}, \hyperpage{13}
+    \subitem {deinit}, \hyperpage{13}
+    \subitem {get\discretionary {-}{}{}Call\discretionary {-}{}{}Order}, 
+		\hyperpage{13}
+    \subitem {init}, \hyperpage{13}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{13}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{13}
+    \subitem {update}, \hyperpage{13}
+  \item {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium.\discretionary {-}{}{}cpp}, 
+		\hyperpage{25}
+  \item {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium.\discretionary {-}{}{}hpp}, 
+		\hyperpage{26}
+  \item {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium\discretionary {-}{}{}Plugin\discretionary {-}{}{}Interface}, 
+		\hyperpage{14}
+    \subitem {get\discretionary {-}{}{}Plugin\discretionary {-}{}{}Info}, 
+		\hyperpage{14}
+    \subitem {get\discretionary {-}{}{}Stel\discretionary {-}{}{}Module}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {pause}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{18}
+  \item {pl}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{19}
+  \item {play}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{19}
+  \item {play\discretionary {-}{}{}Audio}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{19}
+  \item {play\discretionary {-}{}{}Clicked}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{19}
+  \item {pos\discretionary {-}{}{}\_\discretionary {-}{}{}received}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{19}
+  \item {process\discretionary {-}{}{}Error}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{11}
+  \item {process\discretionary {-}{}{}Timeout}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{12}
+
+  \indexspace
+
+  \item {response}
+    \subitem {Serial\discretionary {-}{}{}Com}, \hyperpage{22}
+  \item {retranslate}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{19}
+  \item {right\discretionary {-}{}{}Pressed}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{19}
+  \item {run}
+    \subitem {Serial\discretionary {-}{}{}Com}, \hyperpage{22}
+
+  \indexspace
+
+  \item {save\discretionary {-}{}{}Script}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{19}
+  \item {select\discretionary {-}{}{}Device}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{19}
+  \item {send\discretionary {-}{}{}Request}
+    \subitem {Serial\discretionary {-}{}{}Com}, \hyperpage{22}
+  \item {Serial\discretionary {-}{}{}Com}, \hyperpage{21}
+    \subitem {$\sim $\discretionary {-}{}{}Serial\discretionary {-}{}{}Com}, 
+		\hyperpage{22}
+    \subitem {error}, \hyperpage{22}
+    \subitem {response}, \hyperpage{22}
+    \subitem {run}, \hyperpage{22}
+    \subitem {send\discretionary {-}{}{}Request}, \hyperpage{22}
+    \subitem {Serial\discretionary {-}{}{}Com}, \hyperpage{22}
+    \subitem {Serial\discretionary {-}{}{}Com}, \hyperpage{22}
+    \subitem {timeout}, \hyperpage{22}
+  \item {Serial\discretionary {-}{}{}Com.\discretionary {-}{}{}cpp}, 
+		\hyperpage{26}
+  \item {Serial\discretionary {-}{}{}Com.\discretionary {-}{}{}hpp}, 
+		\hyperpage{26}
+  \item {set\discretionary {-}{}{}Port\discretionary {-}{}{}Name}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{12}
+  \item {set\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}1}
+    \subitem {Calibrate}, \hyperpage{8}
+  \item {set\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}2}
+    \subitem {Calibrate}, \hyperpage{9}
+  \item {set\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}3}
+    \subitem {Calibrate}, \hyperpage{9}
+  \item {set\discretionary {-}{}{}Reference}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{20}
+  \item {set\discretionary {-}{}{}Signals}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{20}
+  \item {set\discretionary {-}{}{}Time}
+    \subitem {Calibrate}, \hyperpage{9}
+  \item {set\discretionary {-}{}{}Volume}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{20}
+  \item {show\discretionary {-}{}{}Message}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{20}
+  \item {sread}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{12}
+  \item {stop}
+    \subitem {Laser\discretionary {-}{}{}Dev}, \hyperpage{12}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{20}
+  \item {stop\discretionary {-}{}{}Click}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{20}
+
+  \indexspace
+
+  \item {timeout}
+    \subitem {Serial\discretionary {-}{}{}Com}, \hyperpage{22}
+
+  \indexspace
+
+  \item {up\discretionary {-}{}{}Pressed}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{20}
+  \item {update}
+    \subitem {Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {waitforsec}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{20}
+  \item {wt}
+    \subitem {O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}, 
+		\hyperpage{21}
+
+\end{theindex}

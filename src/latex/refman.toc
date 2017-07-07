@@ -1,0 +1,123 @@
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Calibrate Class Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Constructor \& Destructor Documentation}{7}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Calibrate}{7}{subsubsection.4.1.2.1}
+\contentsline {subsection}{\numberline {4.1.3}Member Function Documentation}{8}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}auto\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}3}{8}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}get\discretionary {-}{}{}E\discretionary {-}{}{}Coords}{8}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}get\discretionary {-}{}{}H\discretionary {-}{}{}Coords}{8}{subsubsection.4.1.3.3}
+\contentsline {subsubsection}{\numberline {4.1.3.4}is\discretionary {-}{}{}Configured}{8}{subsubsection.4.1.3.4}
+\contentsline {subsubsection}{\numberline {4.1.3.5}set\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}1}{8}{subsubsection.4.1.3.5}
+\contentsline {subsubsection}{\numberline {4.1.3.6}set\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}2}{9}{subsubsection.4.1.3.6}
+\contentsline {subsubsection}{\numberline {4.1.3.7}set\discretionary {-}{}{}Ref\discretionary {-}{}{}\_\discretionary {-}{}{}3}{9}{subsubsection.4.1.3.7}
+\contentsline {subsubsection}{\numberline {4.1.3.8}set\discretionary {-}{}{}Time}{9}{subsubsection.4.1.3.8}
+\contentsline {section}{\numberline {4.2}Laser\discretionary {-}{}{}Dev Class Reference}{9}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{10}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{10}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Laser\discretionary {-}{}{}Dev}{10}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}$\sim $\discretionary {-}{}{}Laser\discretionary {-}{}{}Dev}{10}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{11}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}debug\discretionary {-}{}{}\_\discretionary {-}{}{}send}{11}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}get\discretionary {-}{}{}Pos}{11}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}init}{11}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}laser\discretionary {-}{}{}Off}{11}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}laser\discretionary {-}{}{}On}{11}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}move}{11}{subsubsection.4.2.3.6}
+\contentsline {subsubsection}{\numberline {4.2.3.7}movx}{11}{subsubsection.4.2.3.7}
+\contentsline {subsubsection}{\numberline {4.2.3.8}movy}{11}{subsubsection.4.2.3.8}
+\contentsline {subsubsection}{\numberline {4.2.3.9}pos\discretionary {-}{}{}\_\discretionary {-}{}{}received}{11}{subsubsection.4.2.3.9}
+\contentsline {subsubsection}{\numberline {4.2.3.10}process\discretionary {-}{}{}Error}{12}{subsubsection.4.2.3.10}
+\contentsline {subsubsection}{\numberline {4.2.3.11}process\discretionary {-}{}{}Timeout}{12}{subsubsection.4.2.3.11}
+\contentsline {subsubsection}{\numberline {4.2.3.12}set\discretionary {-}{}{}Port\discretionary {-}{}{}Name}{12}{subsubsection.4.2.3.12}
+\contentsline {subsubsection}{\numberline {4.2.3.13}sread}{12}{subsubsection.4.2.3.13}
+\contentsline {subsubsection}{\numberline {4.2.3.14}stop}{12}{subsubsection.4.2.3.14}
+\contentsline {section}{\numberline {4.3}Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium Class Reference}{12}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{13}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{13}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}{13}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}$\sim $\discretionary {-}{}{}Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium}{13}{subsubsection.4.3.2.2}
+\contentsline {subsection}{\numberline {4.3.3}Member Function Documentation}{13}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}configure\discretionary {-}{}{}Gui}{13}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}deinit}{13}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.3}get\discretionary {-}{}{}Call\discretionary {-}{}{}Order}{13}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.4}init}{13}{subsubsection.4.3.3.4}
+\contentsline {subsubsection}{\numberline {4.3.3.5}update}{14}{subsubsection.4.3.3.5}
+\contentsline {section}{\numberline {4.4}Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium\discretionary {-}{}{}Plugin\discretionary {-}{}{}Interface Class Reference}{14}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{14}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Member Function Documentation}{14}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}get\discretionary {-}{}{}Plugin\discretionary {-}{}{}Info}{14}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}get\discretionary {-}{}{}Stel\discretionary {-}{}{}Module}{14}{subsubsection.4.4.2.2}
+\contentsline {section}{\numberline {4.5}O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog Class Reference}{15}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{16}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{16}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}{16}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}$\sim $\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog}{16}{subsubsection.4.5.2.2}
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{16}{subsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3.1}arrow\discretionary {-}{}{}\_\discretionary {-}{}{}released}{16}{subsubsection.4.5.3.1}
+\contentsline {subsubsection}{\numberline {4.5.3.2}com\discretionary {-}{}{}G\discretionary {-}{}{}O\discretionary {-}{}{}T\discretionary {-}{}{}O}{16}{subsubsection.4.5.3.2}
+\contentsline {subsubsection}{\numberline {4.5.3.3}compile\discretionary {-}{}{}Script}{16}{subsubsection.4.5.3.3}
+\contentsline {subsubsection}{\numberline {4.5.3.4}com\discretionary {-}{}{}P\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}Y}{16}{subsubsection.4.5.3.4}
+\contentsline {subsubsection}{\numberline {4.5.3.5}com\discretionary {-}{}{}T\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}N}{17}{subsubsection.4.5.3.5}
+\contentsline {subsubsection}{\numberline {4.5.3.6}com\discretionary {-}{}{}W\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}T}{17}{subsubsection.4.5.3.6}
+\contentsline {subsubsection}{\numberline {4.5.3.7}create\discretionary {-}{}{}Dialog\discretionary {-}{}{}Content}{17}{subsubsection.4.5.3.7}
+\contentsline {subsubsection}{\numberline {4.5.3.8}debug\discretionary {-}{}{}\_\discretionary {-}{}{}received}{17}{subsubsection.4.5.3.8}
+\contentsline {subsubsection}{\numberline {4.5.3.9}down\discretionary {-}{}{}Pressed}{17}{subsubsection.4.5.3.9}
+\contentsline {subsubsection}{\numberline {4.5.3.10}exec\discretionary {-}{}{}Script}{17}{subsubsection.4.5.3.10}
+\contentsline {subsubsection}{\numberline {4.5.3.11}go\discretionary {-}{}{}To}{17}{subsubsection.4.5.3.11}
+\contentsline {subsubsection}{\numberline {4.5.3.12}gt}{18}{subsubsection.4.5.3.12}
+\contentsline {subsubsection}{\numberline {4.5.3.13}init\discretionary {-}{}{}Device}{18}{subsubsection.4.5.3.13}
+\contentsline {subsubsection}{\numberline {4.5.3.14}laser}{18}{subsubsection.4.5.3.14}
+\contentsline {subsubsection}{\numberline {4.5.3.15}laser\discretionary {-}{}{}Toggled}{18}{subsubsection.4.5.3.15}
+\contentsline {subsubsection}{\numberline {4.5.3.16}left\discretionary {-}{}{}Pressed}{18}{subsubsection.4.5.3.16}
+\contentsline {subsubsection}{\numberline {4.5.3.17}lo}{18}{subsubsection.4.5.3.17}
+\contentsline {subsubsection}{\numberline {4.5.3.18}move}{18}{subsubsection.4.5.3.18}
+\contentsline {subsubsection}{\numberline {4.5.3.19}open\discretionary {-}{}{}Script}{18}{subsubsection.4.5.3.19}
+\contentsline {subsubsection}{\numberline {4.5.3.20}pause}{19}{subsubsection.4.5.3.20}
+\contentsline {subsubsection}{\numberline {4.5.3.21}pl}{19}{subsubsection.4.5.3.21}
+\contentsline {subsubsection}{\numberline {4.5.3.22}play}{19}{subsubsection.4.5.3.22}
+\contentsline {subsubsection}{\numberline {4.5.3.23}play\discretionary {-}{}{}Audio}{19}{subsubsection.4.5.3.23}
+\contentsline {subsubsection}{\numberline {4.5.3.24}play\discretionary {-}{}{}Clicked}{19}{subsubsection.4.5.3.24}
+\contentsline {subsubsection}{\numberline {4.5.3.25}pos\discretionary {-}{}{}\_\discretionary {-}{}{}received}{19}{subsubsection.4.5.3.25}
+\contentsline {subsubsection}{\numberline {4.5.3.26}retranslate}{19}{subsubsection.4.5.3.26}
+\contentsline {subsubsection}{\numberline {4.5.3.27}right\discretionary {-}{}{}Pressed}{19}{subsubsection.4.5.3.27}
+\contentsline {subsubsection}{\numberline {4.5.3.28}save\discretionary {-}{}{}Script}{19}{subsubsection.4.5.3.28}
+\contentsline {subsubsection}{\numberline {4.5.3.29}select\discretionary {-}{}{}Device}{20}{subsubsection.4.5.3.29}
+\contentsline {subsubsection}{\numberline {4.5.3.30}set\discretionary {-}{}{}Reference}{20}{subsubsection.4.5.3.30}
+\contentsline {subsubsection}{\numberline {4.5.3.31}set\discretionary {-}{}{}Signals}{20}{subsubsection.4.5.3.31}
+\contentsline {subsubsection}{\numberline {4.5.3.32}set\discretionary {-}{}{}Volume}{20}{subsubsection.4.5.3.32}
+\contentsline {subsubsection}{\numberline {4.5.3.33}show\discretionary {-}{}{}Message}{20}{subsubsection.4.5.3.33}
+\contentsline {subsubsection}{\numberline {4.5.3.34}stop}{20}{subsubsection.4.5.3.34}
+\contentsline {subsubsection}{\numberline {4.5.3.35}stop\discretionary {-}{}{}Click}{20}{subsubsection.4.5.3.35}
+\contentsline {subsubsection}{\numberline {4.5.3.36}up\discretionary {-}{}{}Pressed}{20}{subsubsection.4.5.3.36}
+\contentsline {subsubsection}{\numberline {4.5.3.37}waitforsec}{20}{subsubsection.4.5.3.37}
+\contentsline {subsubsection}{\numberline {4.5.3.38}wt}{21}{subsubsection.4.5.3.38}
+\contentsline {section}{\numberline {4.6}Serial\discretionary {-}{}{}Com Class Reference}{21}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{21}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{22}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Serial\discretionary {-}{}{}Com}{22}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}$\sim $\discretionary {-}{}{}Serial\discretionary {-}{}{}Com}{22}{subsubsection.4.6.2.2}
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{22}{subsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.3.1}error}{22}{subsubsection.4.6.3.1}
+\contentsline {subsubsection}{\numberline {4.6.3.2}response}{22}{subsubsection.4.6.3.2}
+\contentsline {subsubsection}{\numberline {4.6.3.3}run}{22}{subsubsection.4.6.3.3}
+\contentsline {subsubsection}{\numberline {4.6.3.4}send\discretionary {-}{}{}Request}{22}{subsubsection.4.6.3.4}
+\contentsline {subsubsection}{\numberline {4.6.3.5}timeout}{22}{subsubsection.4.6.3.5}
+\contentsline {chapter}{\numberline {5}File Documentation}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Calibrate.\discretionary {-}{}{}cpp File Reference}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Calibrate.\discretionary {-}{}{}hpp File Reference}{23}{section.5.2}
+\contentsline {section}{\numberline {5.3}gui/\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog.cpp File Reference}{24}{section.5.3}
+\contentsline {section}{\numberline {5.4}gui/\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}Main\discretionary {-}{}{}Dialog.hpp File Reference}{24}{section.5.4}
+\contentsline {section}{\numberline {5.5}Laser\discretionary {-}{}{}Dev.\discretionary {-}{}{}cpp File Reference}{25}{section.5.5}
+\contentsline {section}{\numberline {5.6}Laser\discretionary {-}{}{}Dev.\discretionary {-}{}{}hpp File Reference}{25}{section.5.6}
+\contentsline {section}{\numberline {5.7}Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium.\discretionary {-}{}{}cpp File Reference}{25}{section.5.7}
+\contentsline {section}{\numberline {5.8}Open\discretionary {-}{}{}Sky\discretionary {-}{}{}Planetarium.\discretionary {-}{}{}hpp File Reference}{26}{section.5.8}
+\contentsline {section}{\numberline {5.9}Serial\discretionary {-}{}{}Com.\discretionary {-}{}{}cpp File Reference}{26}{section.5.9}
+\contentsline {section}{\numberline {5.10}Serial\discretionary {-}{}{}Com.\discretionary {-}{}{}hpp File Reference}{26}{section.5.10}
+\contentsline {chapter}{Index}{27}{section*.19}
