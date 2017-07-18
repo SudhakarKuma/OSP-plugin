@@ -43,6 +43,7 @@ void setup(){
   pinMode(relay2,OUTPUT);
   pinMode(relay3,OUTPUT);
   pinMode(relay4,OUTPUT);
+  
   digitalWrite(relay1, HIGH);
   digitalWrite(relay2, HIGH);
   digitalWrite(relay3, HIGH);
@@ -106,6 +107,8 @@ void getAcAlt(){
 
 
 void loop(){
+
+ 
   float ac, alt;
   char comm[5];
   int bytes_recv = 0;
@@ -115,8 +118,11 @@ void loop(){
     //Waiting for a command from serial monitor 
     if (Serial.available() > 0)
       comm[bytes_recv++] = Serial.read();
-      
+      //Serial.println("here");
+      //Serial.println(analogRead(smps));        
   }
+  
+    
   if(strcmp(comm, "move")==0){
     Serial.println("float");
     getAcAlt();
@@ -150,10 +156,10 @@ void loop(){
   
   else if(strcmp(comm, "init")==0){
     delay(1000);
-    digitalWrite(relay1,LOW);
-    digitalWrite(relay2,LOW);
-    digitalWrite(relay3,LOW);
-    digitalWrite(relay4,LOW);
+   digitalWrite(relay1,LOW);
+   digitalWrite(relay2,LOW);
+   digitalWrite(relay3,LOW);
+   digitalWrite(relay4,LOW);
     Axes.init();
     Serial.println("done_init");
   }
