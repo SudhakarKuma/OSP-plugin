@@ -9,3 +9,4 @@ It has following features:
 
 3. Second relay is driven by the output of step down module (4v). Earlier it was driven by Arduino board. 
 4. "Start Calibrate" does not switch ON second relay. 
+
