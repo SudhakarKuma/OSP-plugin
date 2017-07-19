@@ -1,4 +1,4 @@
-# Install script for directory: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/src
+# Install script for directory: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

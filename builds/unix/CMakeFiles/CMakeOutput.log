@@ -1,4 +1,4 @@
-The system is: Linux - 4.4.0-79-generic - x86_64
+The system is: Linux - 4.4.0-83-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/3.5.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/3.5.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_13f97/fast"
-/usr/bin/make -f CMakeFiles/cmTC_13f97.dir/build.make CMakeFiles/cmTC_13f97.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_13f97.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_13f97.dir/testCCompiler.c.o   -c "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp/testCCompiler.c"
-Linking C executable cmTC_13f97
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13f97.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_13f97.dir/testCCompiler.c.o  -o cmTC_13f97 -rdynamic 
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_45171/fast"
+/usr/bin/make -f CMakeFiles/cmTC_45171.dir/build.make CMakeFiles/cmTC_45171.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45171.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_45171.dir/testCCompiler.c.o   -c /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_45171
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45171.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_45171.dir/testCCompiler.c.o  -o cmTC_45171 -rdynamic 
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0018c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0018c.dir/build.make CMakeFiles/cmTC_0018c.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0018c.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_0018c.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_0018c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0018c.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_0018c.dir/CMakeCCompilerABI.c.o  -o cmTC_0018c -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_4a3a7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a3a7.dir/build.make CMakeFiles/cmTC_4a3a7.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a3a7.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4a3a7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_4a3a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a3a7.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_4a3a7.dir/CMakeCCompilerABI.c.o  -o cmTC_4a3a7 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0018c' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUzkvpv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0018c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_0018c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4a3a7' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSGoSKu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_4a3a7 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_4a3a7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_0018c/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_0018c.dir/build.make CMakeFiles/cmTC_0018c.dir/build]
-  ignore line: [make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_0018c.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_0018c.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_0018c]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0018c.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_0018c.dir/CMakeCCompilerABI.c.o  -o cmTC_0018c -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_4a3a7/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_4a3a7.dir/build.make CMakeFiles/cmTC_4a3a7.dir/build]
+  ignore line: [make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_4a3a7.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_4a3a7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_4a3a7]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a3a7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_4a3a7.dir/CMakeCCompilerABI.c.o  -o cmTC_4a3a7 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0018c' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUzkvpv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0018c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_0018c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4a3a7' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSGoSKu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_4a3a7 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_4a3a7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccUzkvpv.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccSGoSKu.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_0018c] ==> ignore
+    arg [cmTC_4a3a7] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_0018c.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_4a3a7.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -153,17 +153,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0fba4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0fba4.dir/build.make CMakeFiles/cmTC_0fba4.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0fba4.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_0fba4.dir/feature_tests.c.o   -c "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_0fba4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fba4.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_0fba4.dir/feature_tests.c.o  -o cmTC_0fba4 -rdynamic 
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_33929/fast"
+/usr/bin/make -f CMakeFiles/cmTC_33929.dir/build.make CMakeFiles/cmTC_33929.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33929.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_33929.dir/feature_tests.c.o   -c /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/feature_tests.c
+Linking C executable cmTC_33929
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33929.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_33929.dir/feature_tests.c.o  -o cmTC_33929 -rdynamic 
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -173,17 +173,17 @@ make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/O
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fab1f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fab1f.dir/build.make CMakeFiles/cmTC_fab1f.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fab1f.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_fab1f.dir/feature_tests.c.o   -c "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_fab1f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fab1f.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_fab1f.dir/feature_tests.c.o  -o cmTC_fab1f -rdynamic 
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ecce7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ecce7.dir/build.make CMakeFiles/cmTC_ecce7.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ecce7.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_ecce7.dir/feature_tests.c.o   -c /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ecce7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecce7.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ecce7.dir/feature_tests.c.o  -o cmTC_ecce7 -rdynamic 
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -193,17 +193,17 @@ make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/O
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f4f76/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f4f76.dir/build.make CMakeFiles/cmTC_f4f76.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f4f76.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_f4f76.dir/feature_tests.c.o   -c "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_f4f76
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4f76.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_f4f76.dir/feature_tests.c.o  -o cmTC_f4f76 -rdynamic 
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_3f8fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3f8fe.dir/build.make CMakeFiles/cmTC_3f8fe.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f8fe.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_3f8fe.dir/feature_tests.c.o   -c /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/feature_tests.c
+Linking C executable cmTC_3f8fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f8fe.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_3f8fe.dir/feature_tests.c.o  -o cmTC_3f8fe -rdynamic 
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -211,30 +211,30 @@ make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/O
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4f3a8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4f3a8.dir/build.make CMakeFiles/cmTC_4f3a8.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4f3a8.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_4f3a8.dir/testCXXCompiler.cxx.o -c "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
-Linking CXX executable cmTC_4f3a8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f3a8.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_4f3a8.dir/testCXXCompiler.cxx.o  -o cmTC_4f3a8 -rdynamic 
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_020c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_020c7.dir/build.make CMakeFiles/cmTC_020c7.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_020c7.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_020c7.dir/testCXXCompiler.cxx.o -c /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_020c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_020c7.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_020c7.dir/testCXXCompiler.cxx.o  -o cmTC_020c7 -rdynamic 
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_55c1c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_55c1c.dir/build.make CMakeFiles/cmTC_55c1c.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_55c1c.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_55c1c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_55c1c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55c1c.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_55c1c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_55c1c -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_b7b5f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7b5f.dir/build.make CMakeFiles/cmTC_b7b5f.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b7b5f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_b7b5f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_b7b5f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7b5f.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_b7b5f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b7b5f -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -244,23 +244,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_55c1c' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2ce8JY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_55c1c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_55c1c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7b5f' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWahtF0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_b7b5f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_b7b5f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_55c1c/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_55c1c.dir/build.make CMakeFiles/cmTC_55c1c.dir/build]
-  ignore line: [make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_55c1c.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_55c1c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_55c1c]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55c1c.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_55c1c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_55c1c -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_b7b5f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_b7b5f.dir/build.make CMakeFiles/cmTC_b7b5f.dir/build]
+  ignore line: [make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_b7b5f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_b7b5f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_b7b5f]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7b5f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_b7b5f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b7b5f -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -270,13 +270,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_55c1c' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2ce8JY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_55c1c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_55c1c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7b5f' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWahtF0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_b7b5f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_b7b5f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc2ce8JY.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccWahtF0.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -294,7 +294,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_55c1c] ==> ignore
+    arg [cmTC_b7b5f] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_55c1c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_b7b5f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -336,17 +336,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_37b0b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_37b0b.dir/build.make CMakeFiles/cmTC_37b0b.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_37b0b.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_37b0b.dir/feature_tests.cxx.o -c "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_37b0b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37b0b.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_37b0b.dir/feature_tests.cxx.o  -o cmTC_37b0b -rdynamic 
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b7f12/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7f12.dir/build.make CMakeFiles/cmTC_b7f12.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b7f12.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_b7f12.dir/feature_tests.cxx.o -c /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b7f12
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7f12.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_b7f12.dir/feature_tests.cxx.o  -o cmTC_b7f12 -rdynamic 
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -409,17 +409,17 @@ make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/O
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_af650/fast"
-/usr/bin/make -f CMakeFiles/cmTC_af650.dir/build.make CMakeFiles/cmTC_af650.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_af650.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_af650.dir/feature_tests.cxx.o -c "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_af650
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af650.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_af650.dir/feature_tests.cxx.o  -o cmTC_af650 -rdynamic 
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_307aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_307aa.dir/build.make CMakeFiles/cmTC_307aa.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_307aa.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_307aa.dir/feature_tests.cxx.o -c /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_307aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_307aa.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_307aa.dir/feature_tests.cxx.o  -o cmTC_307aa -rdynamic 
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -482,17 +482,17 @@ make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/O
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp
+Change Dir: /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d1d0f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d1d0f.dir/build.make CMakeFiles/cmTC_d1d0f.dir/build
-make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d1d0f.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_d1d0f.dir/feature_tests.cxx.o -c "/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_d1d0f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1d0f.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_d1d0f.dir/feature_tests.cxx.o  -o cmTC_d1d0f -rdynamic 
-make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium Plugin(with handle release)/builds/unix/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_dd4c8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd4c8.dir/build.make CMakeFiles/cmTC_dd4c8.dir/build
+make[1]: Entering directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dd4c8.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_dd4c8.dir/feature_tests.cxx.o -c /home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_dd4c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd4c8.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_dd4c8.dir/feature_tests.cxx.o  -o cmTC_dd4c8 -rdynamic 
+make[1]: Leaving directory '/home/sudhakar/Downloads/stellarium-0.15.2/plugins/Open-Sky-Planetarium_July_19/builds/unix/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
