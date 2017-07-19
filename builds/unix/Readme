@@ -1,0 +1,5 @@
+Now open this directory in terminal. 
+Run the following commands one by one:
+  cmake ../..
+  make 
+  make install 
