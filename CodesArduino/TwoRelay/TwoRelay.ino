@@ -52,7 +52,8 @@ void setup(){
   pinMode(relay2,OUTPUT);
   pinMode(relay3,OUTPUT);
   pinMode(relay4,OUTPUT);
-  pinMode(13,OUTPUT);
+  pinMode(A1,OUTPUT);
+  digitalWrite(A1, LOW); 
   pinMode(smps,INPUT);
   digitalWrite(relay1, HIGH);
   digitalWrite(relay2, HIGH);
@@ -129,7 +130,7 @@ void loop(){
     if (Serial.available() > 0)
       comm[bytes_recv++] = Serial.read();
         
-      digitalWrite(13, LOW);
+      digitalWrite(A1, HIGH);
   if(analogRead(smps)>=300)
   {
     if(smps_on==0)
