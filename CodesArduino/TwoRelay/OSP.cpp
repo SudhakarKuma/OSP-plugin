@@ -107,7 +107,7 @@ bool OSP::movx(bool dir, int step1, int dir1)
         stepx=25600;
         
       else {
-        digitalWrite(dir1, HIGH);
+        digitalWrite(dir1, LOW);
         digitalWrite(step1, HIGH);
         delay(delayValue); 
         digitalWrite(step1, LOW);
@@ -120,7 +120,7 @@ bool OSP::movx(bool dir, int step1, int dir1)
       if(stepx<=0)
         stepx = 0;
         else {
-         digitalWrite(dir1, LOW);
+         digitalWrite(dir1, HIGH);
          digitalWrite(step1, HIGH);
          delay(delayValue); 
          digitalWrite(step1, LOW);
@@ -248,9 +248,9 @@ void OSP::_moveXY(int x, int y, bool nodelay)
   for(int count=0;count<abs(x);count++)
   {
     if(x<0)
-      digitalWrite(11, LOW);      
+      digitalWrite(11, HIGH);      
     else
-      digitalWrite(11, HIGH); 
+      digitalWrite(11, LOW); 
         
     digitalWrite(12, HIGH); 
     delay(10); 
