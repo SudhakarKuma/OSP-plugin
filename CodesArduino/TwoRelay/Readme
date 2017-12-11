@@ -1,0 +1,12 @@
+This code is updated on July 18, 2017 and tested on one 2DM542 and one TB6560 driver.
+
+It has following features:
+1. One relay is used to connect SMPS to loads (LASER and motors). This relay is driven by Arduino board. 
+	digitalWrite(13, LOW); 
+
+2. Second relay is turned on automatically when SMPS is found to be ON.
+	if(analogRead(smps)>=300)
+
+3. Second relay is driven by the output of step down module (4v). Earlier it was driven by Arduino board. 
+4. "Start Calibrate" does not switch ON second relay. 
+
