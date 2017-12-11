@@ -100,6 +100,9 @@ void OSPMainDialog::createDialogContent()
     connect(ui->closeStelWindow, SIGNAL(clicked()), this, SLOT(closeWin()));
     ui->xSteps->setPlaceholderText( "X degree" );
     ui->ySteps->setPlaceholderText( "Y degree" );
+    ui->xSteps->setEnabled(false);
+    ui->ySteps->setEnabled(false);
+    ui->nSteps->setEnabled(false);
 }
 
 /*
@@ -242,6 +245,9 @@ void OSPMainDialog :: initDevice(){
         ui->mvRight->setEnabled(true);
         ui->reset->setEnabled(true);
 		ui->refStat->setText("0/3");
+        ui->xSteps->setEnabled(true);
+        ui->ySteps->setEnabled(true);
+        ui->nSteps->setEnabled(true);        
 }
 
 /*
@@ -273,13 +279,8 @@ void OSPMainDialog :: selectDevice(){
 		ui->laserOff->setEnabled(true);
         ui->CoarseAdj->setEnabled(true);
         ui->FineAdj->setEnabled(true);
-
         ui->StepAdj->setEnabled(true);
-        ui->xSteps->setEnabled(true);
-        ui->ySteps->setEnabled(true);
-        ui->nSteps->setEnabled(true);
-       
-        
+               
 		ui->refStat->setText("0/3");
 	}
 	else{
