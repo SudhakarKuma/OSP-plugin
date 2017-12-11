@@ -346,4 +346,3 @@ void LaserDev :: StepAdj(){
     comm=QString("stad");
     thread.sendRequest(osp_serialPort,1000,QString(comm));
 }
-

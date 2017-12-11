@@ -238,5 +238,4 @@ public slots:
 };
 
 
-
 #endif // LASERDEV_HPP

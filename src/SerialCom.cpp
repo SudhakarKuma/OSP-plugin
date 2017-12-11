@@ -105,7 +105,7 @@ void SerialCom::run()
             emit timeout(tr("Wait Write Request Timed Out %1")
                          .arg(QTime::currentTime().toString()));
         }
-        mutex.lock();
+        //mutex.lock();
         cond.wait(&mutex);
         if (myPortName != port) {
             myPortName = port;
@@ -115,6 +115,7 @@ void SerialCom::run()
         }
         myWaitTimeout = waitTime;
         myRequest = request;
-        mutex.unlock();
+       // mutex.unlock();
     }
 }
+
