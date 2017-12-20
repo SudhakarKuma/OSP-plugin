@@ -125,7 +125,7 @@ void Calibrate::setTime(double t0){
  * If all the reference objects have been established, calls the function that calculates T and iT.
  */
 void Calibrate::setRef_1(double ar, double dec, double t, double ac, double alt){
-	_setEVC(ar, dec, t, _LMN1);
+	_setEVC(ar, dec, t, _LMN1);//changed time to t0 from t
 	_setHVC(ac, alt, _lmn1);
 	_isSetR1 = true;
 	_isSetR3 = false;
@@ -139,7 +139,7 @@ void Calibrate::setRef_1(double ar, double dec, double t, double ac, double alt)
  * If all the reference objects have been established, calls the function that calculates T and iT.
  */
 void Calibrate::setRef_2(double ar, double dec, double t, double ac, double alt){
-	_setEVC(ar, dec, t, _LMN2);
+	_setEVC(ar, dec, t, _LMN2);//changed time to t0 from t
 	_setHVC(ac, alt, _lmn2);
 	_isSetR2 = true;
 	_isSetR3 = false;
@@ -153,7 +153,7 @@ void Calibrate::setRef_2(double ar, double dec, double t, double ac, double alt)
  * If all the reference objects have been established, calls the function that calculates T and iT.
  */
 void Calibrate::setRef_3(double ar, double dec, double t, double ac, double alt){
-	_setEVC(ar, dec, t, _LMN3);
+	_setEVC(ar, dec, t, _LMN3);//changed time to t0 from t
 	_setHVC(ac, alt, _lmn3);
 	_isSetR3 = true;
 

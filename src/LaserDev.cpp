@@ -28,6 +28,8 @@
 #include <QDateTime>
 #include <QMessageBox>
 #include "SerialCom.hpp"
+#include <time.h>  
+
 
 /*
 Constructor:
@@ -86,13 +88,17 @@ sread(const QString):
 void LaserDev::sread(const QString &s){
 	QString recvd = s.trimmed();
 	QRegExp exp("t_([0-9\\.\\-]{4,9})_([0-9\\.\\-]{4,9})");
+	QRegExp exp_step("st_([0-9\\.\\-]{0,9})_([0-9\\.\\-]{0,9})");
+
 	if(recvd.compare("done_init")==0){
 		emit debug_send(recvd);
-            getPos();
+           // getPos();
 	}
 	else if(recvd.compare("done_movu")==0){
 		emit debug_send(recvd);
             getPos();
+		wait(); 
+           getSteps();
 	}
 	else if(recvd.compare("done_movd")==0){
 		emit debug_send(recvd);
@@ -108,6 +114,8 @@ void LaserDev::sread(const QString &s){
 	}
 	else if(recvd.compare("done_move")==0){
 		emit debug_send(recvd);
+		//wait(); 
+           	//getPos();
 	}
 	else if(recvd.compare("done_laon")==0){
 		emit debug_send(recvd);
@@ -119,6 +127,9 @@ void LaserDev::sread(const QString &s){
                 emit debug_send(recvd);
         }
         else if(recvd.compare("done_low_speed")==0){
+                emit debug_send(recvd);
+        }
+	else if(recvd.compare("done_step_mode")==0){
                 emit debug_send(recvd);
         }
         else if(recvd.compare("done_reset")==0){
@@ -134,8 +145,13 @@ void LaserDev::sread(const QString &s){
         bool x_neg=false,y_neg=false;
         if(dx<0) x_neg=true;
         if(dy<0) y_neg=true;
-        step_x=QString::number(dx,'f',3);
-        step_y=QString::number(dy,'f',3);
+        
+        // degree to radian conversion 
+        const double halfC = M_PI / 180;
+        dx = halfC*dx ;
+        dy = halfC*dy ;
+        step_x=QString::number(dx,'f',4);
+        step_y=QString::number(dy,'f',4);
         if(!x_neg){
             step_x = QString("+"+step_x);
         }
@@ -143,7 +159,7 @@ void LaserDev::sread(const QString &s){
             step_y = QString("+"+step_y);
             }
         comm=QString("m_%1_%2").arg(step_x).arg(step_y);
-        thread.sendRequest(osp_serialPort,1000,QString(comm));
+        thread.sendRequest(osp_serialPort,10000,QString(comm));
         emit debug_send(comm);
     }
         else if(recvd.compare("done_lase")==0){
@@ -167,12 +183,22 @@ void LaserDev::sread(const QString &s){
                         alt = QString("+"+alt);
                 }
                 comm=QString("m_%1_%2").arg(ac).arg(alt);
-                thread.sendRequest(osp_serialPort,1000,QString(comm));
+                thread.sendRequest(osp_serialPort,10000,QString(comm));
                 emit debug_send(comm);
         }
 	else if(exp.exactMatch(recvd)){
+       		emit debug_send(recvd);
+
 		QStringList items = exp.capturedTexts();
+       		qDebug()<<"items "<<items;
 		emit pos_received(items[1],items[2]);
+		
+
+	}
+	else if(exp_step.exactMatch(recvd)){
+		//emit debug_send(recvd);
+		qDebug()<<"laser steps received: "<<recvd;
+			
 	}
 	else {
 		emit debug_send(QString("Unexpected Byte Received.Please Restart the device: %1 if problems persist").arg(recvd));
@@ -209,6 +235,16 @@ getPos():
 */
 void LaserDev :: getPos(){
 	comm=QString("post");
+        thread.sendRequest(osp_serialPort,100,QString(comm));
+}
+
+/*
+getPos():
+	This function is called to get the current position of the telescope in radians
+*/
+void LaserDev :: getSteps(){
+	comm=QString("step");
+	qDebug()<<"getSteps() ";
         thread.sendRequest(osp_serialPort,100,QString(comm));
 }
 

@@ -247,7 +247,9 @@ void OSPMainDialog :: initDevice(){
 		ui->refStat->setText("0/3");
         ui->xSteps->setEnabled(true);
         ui->ySteps->setEnabled(true);
-        ui->nSteps->setEnabled(true);        
+        ui->nSteps->setEnabled(true);  
+        //device.StepAdj();
+      
 }
 
 /*

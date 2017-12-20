@@ -18,6 +18,8 @@
 #include "SerialCom.hpp"
 #include <QtSerialPort/QSerialPort>
 #include <QTime>
+ #include <QDebug>
+
 
 QT_USE_NAMESPACE
 
@@ -72,7 +74,7 @@ void SerialCom::run()
         myPortNameChanged = true;
     }
 
-    int myWaitTimeout = waitTime;
+    int myWaitTimeout = -1; //waitTime;
     QString myRequest = request;
     //mutex.unlock();
     //QSerialPort serial;
@@ -93,13 +95,16 @@ void SerialCom::run()
         if (serial.waitForBytesWritten(waitTime)) {
             if (serial.waitForReadyRead(myWaitTimeout)) {
                 QByteArray responseData = serial.readAll();
-                while (serial.waitForReadyRead(10))
-                    responseData += serial.readAll();
+                //while (serial.waitForReadyRead(10))
+                    //responseData += serial.readAll();
                 QString response(responseData);
                 emit this->response(response);
             } else {
                 emit timeout(tr("Wait Read Request Timed Out %1")
                              .arg(QTime::currentTime().toString()));
+                qDebug()<<QString("Wait Read Requests Timed Out %1")
+                             .arg(QTime::currentTime().toString());
+
             }
         } else {
             emit timeout(tr("Wait Write Request Timed Out %1")

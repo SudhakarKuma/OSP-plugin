@@ -144,7 +144,10 @@ public slots:
 
 	/**
 	*	slot for the error, sends the signal to OSPMainDialog
+
 	*/
+void getSteps();
+
     void processError(const QString &s);
 
 	/**
