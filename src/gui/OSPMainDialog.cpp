@@ -96,7 +96,7 @@ void OSPMainDialog::retranslate()
 void OSPMainDialog::createDialogContent()
 {
 	ui->setupUi(dialog);
-	ui->tabWidg->setCurrentIndex(2);
+	ui->tabWidg->setCurrentIndex(0);
 	setSignals();
 	connect(&StelApp::getInstance(), SIGNAL(languageChanged()), this, SLOT(retranslate()));
     connect(ui->closeStelWindow, SIGNAL(clicked()), this, SLOT(closeWin()));
