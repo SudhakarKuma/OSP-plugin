@@ -72,6 +72,8 @@ OSPMainDialog::OSPMainDialog()
     player->setVolume(50);
     playerState = QMediaPlayer::StoppedState;
 	remtim = 0;
+    intense_value = 0;
+
 }
 
 OSPMainDialog::~OSPMainDialog()
@@ -247,7 +249,9 @@ void OSPMainDialog :: initDevice(){
 		ui->refStat->setText("0/3");
         ui->xSteps->setEnabled(true);
         ui->ySteps->setEnabled(true);
-        ui->nSteps->setEnabled(true);        
+        ui->nSteps->setEnabled(true);  
+        //device.StepAdj();
+      
 }
 
 /*
@@ -391,8 +395,15 @@ laserToggled():
 void OSPMainDialog :: laserToggled(){
 		if (ui->laserOn->isChecked()){
 			device.laserOn();
-                        ui->intensity->setEnabled(true);
-                        qDebug() << "[OpenSkyPlanetarium]:Turning LASER on" << endl;
+            ui->intensity->setEnabled(true);
+            ui->intensity->setSliderPosition(0);
+
+            if (intense_value > 0 ) {            // restore previous intensity value
+                ui->intensity->setSliderPosition(intense_value);
+                device.setIntensity(intense_value);
+                qDebug() << "[OpenSkyPlanetarium]:Changing intensity" << endl;
+            }                
+            qDebug() << "[OpenSkyPlanetarium]:Turning LASER on" << endl;
 		}
 		else{
                     
@@ -433,6 +444,7 @@ void OSPMainDialog :: closeWin(){
 */
 void OSPMainDialog :: setIntensity(int x){
     int l=ui->intensity->value();
+    intense_value = l;        // store latest intensity value
     device.setIntensity(l);
     qDebug() << "[OpenSkyPlanetarium]:Changing intensity" << endl;
 }

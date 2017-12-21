@@ -326,6 +326,11 @@ private:
 	QTime dieTime;
 	QTime pauseWait;
 	qint32 remtim;
+	int intense_value;
+
+      /**
+      *    integar for varying the intensity of LASER.
+      */
 };
 
 #endif // OSPMAINDIALOG_H

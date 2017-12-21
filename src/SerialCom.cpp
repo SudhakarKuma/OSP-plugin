@@ -18,6 +18,8 @@
 #include "SerialCom.hpp"
 #include <QtSerialPort/QSerialPort>
 #include <QTime>
+ #include <QDebug>
+
 
 QT_USE_NAMESPACE
 
@@ -100,6 +102,9 @@ void SerialCom::run()
             } else {
                 emit timeout(tr("Wait Read Request Timed Out %1")
                              .arg(QTime::currentTime().toString()));
+                qDebug()<<QString("Wait Read Request Timed Out %1")
+                             .arg(QTime::currentTime().toString());
+
             }
         } else {
             emit timeout(tr("Wait Write Request Timed Out %1")
