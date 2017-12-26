@@ -250,7 +250,7 @@ void OSPMainDialog :: initDevice(){
         ui->xSteps->setEnabled(true);
         ui->ySteps->setEnabled(true);
         ui->nSteps->setEnabled(true);  
-        //device.StepAdj();
+        device.StepAdj();
       
 }
 
@@ -491,6 +491,11 @@ void OSPMainDialog :: setReference(){
         }
         if (!selected.isEmpty()) {
             StelUtils::rectToSphe(&ra,&dec,selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore()));
+            // qDebug()<<selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore())[0];
+            // qDebug()<<selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore())[1];
+            // qDebug()<<selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore())[2];
+            qDebug()<<"Name : "<<(selected[0]->getNameI18n());
+
             osp_ra=ra - 3.14159;
             osp_dec=dec;
             osp_time=time;
@@ -502,8 +507,8 @@ void OSPMainDialog :: setReference(){
              device.getPos();
              ac = acTemp.toDouble();
              alt = altTemp.toDouble();
-                calib.setRef_1(osp_ra,osp_dec,osp_time,ac,alt);
-                            showMessage(QString("First reference point has been set\n az = %1; alt = %2").arg(ac).arg(alt));
+            calib.setRef_1(osp_ra,osp_dec,osp_time,ac,alt);
+            showMessage(QString("First reference point has been set\n az = %1; alt = %2").arg(ac).arg(alt));
                 break;
             case 2:
             device.getPos();

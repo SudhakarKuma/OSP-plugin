@@ -96,9 +96,10 @@ void LaserDev::sread(const QString &s){
 	}
 	else if(recvd.compare("done_movu")==0){
 		emit debug_send(recvd);
-            getPos();
-		wait(); 
-           getSteps();
+        getPos();
+		// wait(); 
+        // getSteps();
+           
 	}
 	else if(recvd.compare("done_movd")==0){
 		emit debug_send(recvd);
@@ -159,9 +160,8 @@ void LaserDev::sread(const QString &s){
             step_y = QString("+"+step_y);
             }
         comm=QString("m_%1_%2").arg(step_x).arg(step_y);
-        thread.sendRequest(osp_serialPort,10000,QString(comm));
+        thread.sendRequest(osp_serialPort,-1,QString(comm));
         emit debug_send(comm);
-        //getPos();
     }
         else if(recvd.compare("done_lase")==0){
                emit debug_send("done_lase");
