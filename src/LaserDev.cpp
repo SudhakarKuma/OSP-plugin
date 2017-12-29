@@ -29,6 +29,8 @@
 #include <QMessageBox>
 #include "SerialCom.hpp"
 #include <time.h>  
+ #include <QTimer>
+
 
 
 /*
@@ -79,7 +81,19 @@ void LaserDev :: releasePort(){
     thread.serial.close();
     qDebug()<<"Releasing Port";
 }
-
+/*
+showM(QString):
+    this function is called to display error/information messages
+*/
+void LaserDev::showM(QString m){
+   
+   QMessageBox *mbox = new QMessageBox;
+    mbox->setWindowTitle(tr("OpenSkyPlanetarium"));
+    mbox->setText(m);
+    mbox->show();
+    QTimer::singleShot(2000, mbox, SLOT(hide()));
+    
+}
 /*
 sread(const QString):
 	this function is called after writing to the serial port
@@ -118,6 +132,12 @@ void LaserDev::sread(const QString &s){
 		//wait(); 
            	//getPos();
 	}
+    else if(recvd.compare("done_movs")==0){
+        emit debug_send(recvd);
+        getPos();
+         showM("Done LASER movement!");
+       
+    }
 	else if(recvd.compare("done_laon")==0){
 		emit debug_send(recvd);
 	}
@@ -385,3 +405,4 @@ void LaserDev :: StepAdj(){
     comm=QString("stad");
     thread.sendRequest(osp_serialPort,1000,QString(comm));
 }
+

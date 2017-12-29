@@ -57,7 +57,7 @@ public:
 	*/
 	void showMessage(QString m);
 	
-	
+	QString name ;
 public slots:
 
 	/**
@@ -268,8 +268,8 @@ private:
     QString acTemp;
     QString altTemp;
 	double osp_time;
-	double osp_ra;
-	double osp_dec;
+	double osp_az;
+	double osp_alt;
 	bool buildStatus;
 	QString portName;
 	QHash<QString,QString> i18n_to_coords;
@@ -327,10 +327,12 @@ private:
 	QTime pauseWait;
 	qint32 remtim;
 	int intense_value;
-
+	int flip ;
+	StelCore *core;
       /**
       *    integar for varying the intensity of LASER.
       */
+     
 };
 
 #endif // OSPMAINDIALOG_H

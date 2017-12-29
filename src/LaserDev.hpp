@@ -49,6 +49,10 @@ public:
 	*/
     void setPortName(const QString &s);
     void releasePort();
+    /**
+	*	This function is called to display error/information messages
+	*/
+	void showM(QString m);
 signals:
 
 	/**

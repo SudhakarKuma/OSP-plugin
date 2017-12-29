@@ -46,6 +46,7 @@
 #include <QDateTime>
 #include <QCoreApplication>
 #include <unistd.h>
+goto_method = 1;
 OSPMainDialog::OSPMainDialog()
 {
 	ui = new Ui_OSPMainDialog();
@@ -484,62 +485,36 @@ void OSPMainDialog :: setReference(){
         QDateTime dt = QDateTime::currentDateTime();
         double time = StelUtils::hmsToRad (dt.time().hour(), dt.time().minute(), dt.time().second());
         const QList<StelObjectP>& selected = GETSTELMODULE(StelObjectMgr)->getSelectedObject();
-        if(nRef>3)
+        flip = 0;    // not flipped state, initialized for first movement of motor
+        if(nRef>1)
         {
-            nRef=3;
-        ui->setRef->setEnabled(false);
+            nRef=1;
+            ui->setRef->setEnabled(false);
         }
         if (!selected.isEmpty()) {
-            StelUtils::rectToSphe(&ra,&dec,selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore()));
-            // qDebug()<<selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore())[0];
-            // qDebug()<<selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore())[1];
-            // qDebug()<<selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore())[2];
-            qDebug()<<"Name : "<<(selected[0]->getNameI18n());
-
-            osp_ra=ra - 3.14159;
-            osp_dec=dec;
+            StelUtils::rectToSphe(&ra,&dec,selected[0]->getAltAzPosGeometric(StelApp::getInstance().getCore()));
+            name = (selected[0]->getNameI18n());
+            qDebug()<<"Name : "<<name;
+            osp_az=ra; 
+            osp_alt=dec;
             osp_time=time;
-            qDebug() << "Star = ["<<osp_time <<"," <<osp_ra <<"," <<osp_dec<<"]";
+            qDebug() << "Star = ["<<osp_az <<"," <<osp_alt<<"]";
 
             double ac,alt;
-        switch(nRef){
-            case 1:
-             device.getPos();
-             ac = acTemp.toDouble();
-             alt = altTemp.toDouble();
-            calib.setRef_1(osp_ra,osp_dec,osp_time,ac,alt);
-            showMessage(QString("First reference point has been set\n az = %1; alt = %2").arg(ac).arg(alt));
-                break;
-            case 2:
-            device.getPos();
-             ac = acTemp.toDouble();
-             alt = altTemp.toDouble();
-                calib.setRef_2(osp_ra,osp_dec,osp_time,ac,alt);
-                ui->goTo->setEnabled(true);
-                ui->execScript->setEnabled(true);
-                            showMessage(QString("Second reference point has been set\n az = %1; alt = %2").arg(ac).arg(alt));
-                    //showMessage("Second reference point has been set");
-                break;
-            case 3:
-            device.getPos();
-             ac = acTemp.toDouble();
-             alt = altTemp.toDouble();
-                calib.setRef_3(osp_ra,osp_dec,osp_time,ac,alt);
-                ui->setRef->setEnabled(false);
-                ui->goTo->setEnabled(true);
-                ui->execScript->setEnabled(true);
-                            ui->mvDown->setEnabled(false);
-                            ui->mvUp->setEnabled(false);
-                            ui->mvRight->setEnabled(false);
-                            ui->mvLeft->setEnabled(false);
-                            showMessage(QString("Third reference point has been set\n az = %1; alt = %2").arg(ac).arg(alt));
-                        //showMessage("Third reference point has been set");
-                break;
-
-
-                    }
-                    sRef.setNum(nRef);
-            ui->refStat->setText(sRef+"/3");
+            switch(nRef){
+                case 1:                 
+                    ui->setRef->setEnabled(false);
+                    ui->goTo->setEnabled(true);
+                    ui->execScript->setEnabled(true);
+                    ui->mvDown->setEnabled(false);
+                    ui->mvUp->setEnabled(false);
+                    ui->mvRight->setEnabled(false);
+                    ui->mvLeft->setEnabled(false);
+                    showMessage(QString("First reference point has been set\n az = %1; alt = %2").arg(osp_az).arg(osp_alt));
+                    break;
+            }
+            sRef.setNum(nRef);
+            ui->refStat->setText(sRef+"/1");
 
         }
         else{
@@ -557,28 +532,83 @@ void OSPMainDialog :: goTo(){
 	double dec=0,ra=0,ac=0,alt=0;
 	QDateTime dt = QDateTime::currentDateTime();
 	double time = StelUtils::hmsToRad (dt.time().hour(), dt.time().minute(), dt.time().second());
-	const QList<StelObjectP>& selected = GETSTELMODULE(StelObjectMgr)->getSelectedObject();
-	if (!selected.isEmpty()) {
-		StelUtils::rectToSphe(&ra,&dec,selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore()));
-	}
-	qDebug() << "[goto_star_ra,dec,time]:"<<ra <<"," <<dec <<"," <<time;
-    calib.getHCoords(ra-3.14159,dec,time,&ac,&alt);
-	salt.setNum(alt);			//for testing purpose
-	sac.setNum(ac);				//for testing purpose
-    sora.setNum(3.14159+ra);		//for testing purpose
-	sodec.setNum(dec);			//for testing purpose
-	calib.getECoords(ac,alt,time,&ra,&dec); //for testing purpose
-	snra.setNum(ra);			//for testing purpose
-	sndec.setNum(dec);			//for testing purpose
-    showMessage(QString("Old ra/dec = %1/%2 ; New ra/dec = %3/%4 ; LASER Coordinates = %5/%6").arg(sora).arg(sodec).arg(snra).arg(sndec).arg(sac).arg(salt));				//for testing purpose
-	device.move(ac,alt);
-    double xo=ac*(180.0/3.14159);
-    double yo=alt*(180.0/3.14159);
+	
+    //get updated az, alt for previous star
+    StelObjectP selected = GETSTELMODULE(StelObjectMgr)->searchByNameI18n(name);
+    StelUtils::rectToSphe(&osp_az,&osp_alt,
+    selected->getAltAzPosGeometric(StelApp::getInstance().getCore()));
+    
+    //get az, alt for current star
+    const QList<StelObjectP>& selected2 = GETSTELMODULE(StelObjectMgr)->getSelectedObject();
+	if (!selected2.isEmpty()) {
+		StelUtils::rectToSphe(&ac,&alt,selected2[0]->getAltAzPosGeometric(StelApp::getInstance().getCore()));
+        name = (selected2[0]->getNameI18n());
+    }
+        
+    qDebug() << "[from_star_az,alt,time]:"<<osp_az <<"," <<osp_alt <<"," <<time;
+	qDebug() << "[goto_star_az,alt,time]:"<<ac <<"," <<alt <<"," <<time;
+
+    double diff_az = osp_az-ac;
+    double diff_alt = -osp_alt + alt;
+
+    if(goto_method == 1) {
+
+        if (diff_az>M_PI){
+            diff_az=diff_az-2*M_PI;
+        }
+        
+        if (diff_az<-1*M_PI){
+            diff_az=2*M_PI+diff_az;
+        }
+    }
+    else {
+
+        if (diff_az>=M_PI){
+            diff_az = diff_az-M_PI;
+            diff_alt = M_PI-osp_alt-alt;
+
+            
+            if(flip == 0) flip = 1;
+            else {
+                flip = 0;   
+                diff_alt=diff_alt*-1;
+        
+            }
+            qDebug()<<"greater than 180 ";
+        }
+        else if (diff_az<=-1*M_PI){
+            diff_az=M_PI+diff_az;
+            diff_alt = M_PI-osp_alt-alt;
+            if(flip == 0) flip = 1;
+            else {
+                flip = 0; diff_alt=diff_alt*-1;
+         
+            }
+             qDebug()<<"less than 180 ";
+        }
+       else {
+           if(flip == 1)  diff_alt=diff_alt*-1;       
+        
+       }
+
+    }    
+
+    
+    qDebug()<<"======= Current Telescope X: ==== "<<diff_az;
+    qDebug()<<"======= Current Telescope Y: ==== "<<diff_alt;
+
+    device.move(diff_az, diff_alt);
+    
+    double xo=(diff_az)*(180.0/3.14159);
+    double yo=(diff_alt)*(180.0/3.14159);
     QString s=QString::number(xo);
     QString t=QString::number(yo);
     ui->X->setText(s);
     ui->Y->setText(t);
-	qDebug() << "[goto_telescope_ac,alt]:"<<ac <<"," <<alt;
+
+    osp_az = ac ;
+    osp_alt = alt ;
+
 }
 
 /*
@@ -664,7 +694,7 @@ void OSPMainDialog :: compileScript(){
 	commandsList.clear();
 	i = playlist->clear();
 
-	if(nRef<2)
+	if(nRef<0)
 	{
 		compileStatus=false;
 		showMessage(QString("Please do the calibration"));	
@@ -685,7 +715,7 @@ void OSPMainDialog :: compileScript(){
 						//Todo:add checks before going down
 						StelObjectP star = GETSTELMODULE(StelObjectMgr)->searchByNameI18n(com_par[2].trimmed());
 						if(!star.isNull()){
-	 						StelUtils::rectToSphe(&ra,&dec,star->getEquinoxEquatorialPos(StelApp::getInstance().getCore()));
+	 						StelUtils::rectToSphe(&ra,&dec,star->getAltAzPosGeometric(StelApp::getInstance().getCore()));
 							sra.setNum(ra);
 							sdec.setNum(dec);
 							commandsList << QString("goto_"+sra+"_"+sdec);
@@ -749,13 +779,72 @@ move(QString,QString):
 */
 void OSPMainDialog :: move(QString x,QString y){
 	qDebug() << "Moveto X and Y = ["<<x <<","<<y<<"]";
-	double ra,dec,ac,alt;	
-	ra=x.toDouble();
-	dec=y.toDouble();
+	double ac,alt;	
+	ac=x.toDouble();
+	alt=y.toDouble();
 	QDateTime dt = QDateTime::currentDateTime();
 	double time = StelUtils::hmsToRad (dt.time().hour(), dt.time().minute(), dt.time().second());
-        calib.getHCoords(ra - 3.14159,dec,time,&ac,&alt);
-	device.move(ac,alt);
+    
+    StelObjectP selected = GETSTELMODULE(StelObjectMgr)->searchByNameI18n(name);
+    StelUtils::rectToSphe(&osp_az,&osp_alt,selected->getAltAzPosGeometric(StelApp::getInstance().getCore()));
+      
+    qDebug() << "[from_star_az,alt,time]:"<<osp_az <<"," <<osp_alt <<"," <<time;
+    qDebug() << "[goto_star_az,alt,time]:"<<ac <<"," <<alt <<"," <<time;
+
+    double diff_az = osp_az-ac;
+    double diff_alt = -osp_alt + alt;
+
+    if(goto_method == 1) {
+
+        if (diff_az>M_PI){
+            diff_az=diff_az-2*M_PI;
+        }
+        
+        if (diff_az<-1*M_PI){
+            diff_az=2*M_PI+diff_az;
+        }
+    }
+    else {
+
+        if (diff_az>=M_PI){
+            diff_az = diff_az-M_PI;
+            diff_alt = M_PI-osp_alt-alt;
+
+            
+            if(flip == 0) flip = 1;
+            else {
+                flip = 0;   
+                diff_alt=diff_alt*-1;
+        
+            }
+            qDebug()<<"greater than 180 ";
+        }
+        else if (diff_az<=-1*M_PI){
+            diff_az=M_PI+diff_az;
+            diff_alt = M_PI-osp_alt-alt;
+            if(flip == 0) flip = 1;
+            else {
+                flip = 0; diff_alt=diff_alt*-1;
+         
+            }
+             qDebug()<<"less than 180 ";
+        }
+       else {
+           if(flip == 1)  diff_alt=diff_alt*-1;       
+        
+       }
+    }    
+	device.move(diff_az,diff_alt);
+    double xo=(diff_az)*(180.0/3.14159);
+    double yo=(diff_alt)*(180.0/3.14159);
+    QString s=QString::number(xo);
+    QString t=QString::number(yo);
+    ui->X->setText(s);
+    ui->Y->setText(t);
+
+    osp_az = ac ;
+    osp_alt = alt ;
+
 }
 
 /*
@@ -819,9 +908,9 @@ void OSPMainDialog :: gt(){
 	QString sra,sdec;
 	const QList<StelObjectP>& selected = GETSTELMODULE(StelObjectMgr)->getSelectedObject();
 	if (!selected.isEmpty()) {
-		double dec_equinox = 0;
-		double ra_equinox = 0;
-		StelUtils::rectToSphe(&ra_equinox,&dec_equinox,selected[0]->getEquinoxEquatorialPos(StelApp::getInstance().getCore()));
+		double dec_equinox = 0.0;
+		double ra_equinox = 0.0;
+		StelUtils::rectToSphe(&ra_equinox,&dec_equinox,selected[0]->getAltAzPosGeometric(StelApp::getInstance().getCore()));
 		ui->scriptEdit->setText(ui->scriptEdit->toPlainText().append(QString("goto %1;\n").arg(selected[0]->getNameI18n())));
 	}
 	else {
