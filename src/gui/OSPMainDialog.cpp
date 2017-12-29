@@ -46,7 +46,6 @@
 #include <QDateTime>
 #include <QCoreApplication>
 #include <unistd.h>
-goto_method = 1;
 OSPMainDialog::OSPMainDialog()
 {
 	ui = new Ui_OSPMainDialog();
@@ -528,6 +527,9 @@ goTo():
 	this function is enabled only after calibration is performed
 */
 void OSPMainDialog :: goTo(){
+
+    goto_method = 1; // 1 for simple method , 2 for Y motor flipping 
+    
 	QString sora,sodec,snra,sndec,sac,salt; //for testing purpose
 	double dec=0,ra=0,ac=0,alt=0;
 	QDateTime dt = QDateTime::currentDateTime();
@@ -561,18 +563,16 @@ void OSPMainDialog :: goTo(){
             diff_az=2*M_PI+diff_az;
         }
     }
-    else {
-
+    else {              // method 2
+  
         if (diff_az>=M_PI){
             diff_az = diff_az-M_PI;
             diff_alt = M_PI-osp_alt-alt;
-
             
             if(flip == 0) flip = 1;
             else {
                 flip = 0;   
-                diff_alt=diff_alt*-1;
-        
+                diff_alt=diff_alt*-1;        
             }
             qDebug()<<"greater than 180 ";
         }
@@ -581,16 +581,13 @@ void OSPMainDialog :: goTo(){
             diff_alt = M_PI-osp_alt-alt;
             if(flip == 0) flip = 1;
             else {
-                flip = 0; diff_alt=diff_alt*-1;
-         
+                flip = 0; diff_alt=diff_alt*-1;         
             }
              qDebug()<<"less than 180 ";
         }
        else {
-           if(flip == 1)  diff_alt=diff_alt*-1;       
-        
-       }
-
+           if(flip == 1)  diff_alt=diff_alt*-1;     
+        }
     }    
 
     

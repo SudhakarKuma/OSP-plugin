@@ -326,12 +326,21 @@ private:
 	QTime dieTime;
 	QTime pauseWait;
 	qint32 remtim;
+	/**
+	*    integar for varying the intensity of LASER.
+	*/
 	int intense_value;
-	int flip ;
+ 	/**
+      *   int flag to convey when to flip motor at goto, values 0 or 1 
+     */
+	int flip ;    
+	/**
+      *   int flag to change angle calculation method in goto,values 1 or 2
+      	  
+     */
+	int goto_method;     
 	StelCore *core;
-      /**
-      *    integar for varying the intensity of LASER.
-      */
+     
      
 };
 
