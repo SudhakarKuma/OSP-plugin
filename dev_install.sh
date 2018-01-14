@@ -1,4 +1,4 @@
- #!/bin/sh
+#!/bin/sh
 	# Installation script for OSP-plugin for Ubuntu
 	# http://stellarium.sourceforge.net/wiki/index.php/Build_Dependencies_(Qt5)
 
@@ -9,6 +9,7 @@ before_reboot(){
 	do
 		wget -q --tries=10 --timeout=20 --spider http://google.com
 	done
+	printf 'y\n' | sudo apt-get update
 	printf 'y\n' | sudo apt-get install g++ wget
 
 	cd
@@ -28,14 +29,15 @@ before_reboot(){
 		echo "Setting environment variables for qt"
 		echo  "export QTPATH=/home/$USER/Qt5.7.0/5.7/gcc_64
 			export QTDIR=/home/$USER/Qt5.7.0/5.7/gcc_64
-			export QT_SELECT=5
+			export QT_SELECT=default
+			export  CMAKE_PREFIX_PATH=/home/a/Qt5.7.0/5.7/gcc_64
 			export PATH=/home/$USER/Qt5.7.0/5.7/gcc_64/bin:${PATH}
 			export LD_LIBRARY_PATH=${QTPATH}/lib:${LD_LIBRARY_PATH}">> ~/.bashrc	
 		source ~/.bashrc	
 		sudo sh -c "echo "/home/$USER/Qt5.7.0/5.7/gcc_64/lib">>/etc/ld.so.conf.d/x86_64-linux-gnu_GL.conf"
 		sudo ldconfig
-		sudo sh -c "echo "/home/$USER/Qt5.7.0/5.7/gcc_64/bin">/usr/lib/x86_64-linux-gnu/qtchooser/5.conf"
-		sudo sh -c "echo "/home/$USER/Qt5.7.0/5.7/gcc_64/lib">>/usr/lib/x86_64-linux-gnu/qtchooser/5.conf"             
+		sudo sh -c "echo "/home/$USER/Qt5.7.0/5.7/gcc_64/bin">/usr/lib/x86_64-linux-gnu/qtchooser/default.conf"
+		sudo sh -c "echo "/home/$USER/Qt5.7.0/5.7/gcc_64/lib">>/usr/lib/x86_64-linux-gnu/qtchooser/default.conf"             
 	else	
 		wget http://download.qt.io/official_releases/qt/5.7/5.7.0/single/qt-everywhere-opensource-src-5.7.0.tar.gz
 		gunzip qt-everywhere-opensource-src-5.7.0.tar.gz        # uncompress the archive
@@ -54,7 +56,9 @@ before_reboot(){
 		printf 'o\nyes\ny\n' | ./configure 
 		make && sudo make install
 		echo "PATH=/usr/local/Qt-5.7.0/bin:$PATH
+		export  CMAKE_PREFIX_PATH=/usr/local/Qt-5.7.0
 		export PATH">> ~/.bashrc
+		source  ~/.bashrc
 		sudo sh -c "echo "/usr/local/Qt-5.7.0/bin">>/usr/lib/i386-linux-gnu/qt-default/qtchooser/default.conf"             
 		sudo sh -c "echo "/usr/local/Qt-5.7.0/lib">>/usr/lib/i386-linux-gnu/qt-default/qtchooser/default.conf"            
 		 
@@ -83,7 +87,7 @@ before_reboot(){
 		do
 			wget -q --tries=10 --timeout=20 --spider http://google.com
 		done
-	       wget http://www.cmake.org/files/v3.5/cmake-3.5.1.tar.gz
+	     wget http://www.cmake.org/files/v3.5/cmake-3.5.1.tar.gz
 	       tar xzf cmake-3.5.1.tar.gz
 	       cd cmake-3.5.1
 	       ./configure --prefix=/opt/cmake
@@ -113,6 +117,7 @@ before_reboot(){
 
 	echo '======== Updating .bashrc ========'
 	echo  "export STELROOT=/home/$USER/stellarium-0.15.2">> ~/.bashrc	
+	
 
 	echo '======== Installing stellarium ========'
 	cd
@@ -140,9 +145,11 @@ before_reboot(){
 	done
 	printf 'y\n' | sudo apt-get install git
 	git clone https://github.com/SudhakarKuma/OSP-plugin 
-	cd OSP-plugin/builds/unix && sudo rm -r * 
+	cd OSP-plugin
+	mkdir -p builds/unix
+	cd builds/unix && sudo rm -r * 
 	cmake ../.. 
-	#make && sudo make install	
+
 }
 
 after_reboot(){
