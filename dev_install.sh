@@ -171,12 +171,12 @@ after_reboot(){
 
 }
 
-if [ -f /var/run/rebooting-for-updates ]; then
+if [ -f /home/$USER/rebooting-for-updates ]; then
     after_reboot
-    sudo rm /var/run/rebooting-for-updates
+    sudo rm /home/$USER/rebooting-for-updates
 else
     before_reboot
-    sudo touch /var/run/rebooting-for-updates
+    sudo touch /home/$USER/rebooting-for-updates
     echo "Restart required, kindly run the script again after reboot completes. Do you want to continue? [Y/n]."
     read input
     if [[ $input == "Y" || $input == "y" ]]; then	
