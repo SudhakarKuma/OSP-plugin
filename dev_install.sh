@@ -94,6 +94,7 @@ before_reboot(){
 	       make && sudo make install
 		echo  "export PATH=/opt/cmake/bin:$PATH
 		export LD_LIBRARY_PATH=/opt/cmake/bin:$LD_LIBRARY_PATH">> ~/.bashrc
+				source  ~/.bashrc
 	 fi
 
 	echo '======== Creating Qt-Creator.desktop ========'
@@ -117,6 +118,7 @@ before_reboot(){
 
 	echo '======== Updating .bashrc ========'
 	echo  "export STELROOT=/home/$USER/stellarium-0.15.2">> ~/.bashrc	
+	source  ~/.bashrc
 	
 
 	echo '======== Installing stellarium ========'
