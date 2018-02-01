@@ -148,6 +148,7 @@ before_reboot(){
 	printf 'y\n' | sudo apt-get install git
 	git clone https://github.com/SudhakarKuma/OSP-plugin 
 	cd OSP-plugin
+	git checkout test
 	mkdir -p builds/unix
 	cd builds/unix && sudo rm -r * 
 	cmake ../.. 
