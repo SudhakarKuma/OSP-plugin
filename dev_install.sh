@@ -30,7 +30,7 @@ before_reboot(){
 		echo  "export QTPATH=/home/$USER/Qt5.7.0/5.7/gcc_64
 			export QTDIR=/home/$USER/Qt5.7.0/5.7/gcc_64
 			export QT_SELECT=default
-			export  CMAKE_PREFIX_PATH=/home/a/Qt5.7.0/5.7/gcc_64
+			export  CMAKE_PREFIX_PATH=/home/$USER/Qt5.7.0/5.7/gcc_64
 			export PATH=/home/$USER/Qt5.7.0/5.7/gcc_64/bin:${PATH}
 			export LD_LIBRARY_PATH=${QTPATH}/lib:${LD_LIBRARY_PATH}">> ~/.bashrc	
 		source ~/.bashrc	
@@ -43,7 +43,7 @@ before_reboot(){
 		gunzip qt-everywhere-opensource-src-5.7.0.tar.gz        # uncompress the archive
 		tar xvf qt-everywhere-opensource-src-5.7.0.tar          # unpack it
 		echo '========Installing build dependencies for qt========'	
-		#sudo apt-get install libxcb-xinerama0-dev 
+		sudo apt-get install libxcb-xinerama0-dev 
 		echo "Checking Internet connection ...... "
 		wget -q --tries=10 --timeout=20 --spider http://google.com
 		while [[ $? -ne 0 ]] 
@@ -87,7 +87,7 @@ before_reboot(){
 		do
 			wget -q --tries=10 --timeout=20 --spider http://google.com
 		done
-	     wget http://www.cmake.org/files/v3.5/cmake-3.5.1.tar.gz
+	       wget http://www.cmake.org/files/v3.5/cmake-3.5.1.tar.gz
 	       tar xzf cmake-3.5.1.tar.gz
 	       cd cmake-3.5.1
 	       ./configure --prefix=/opt/cmake
@@ -106,8 +106,8 @@ before_reboot(){
 	Name=QtCreator
 	Comment=QtCreator
 	NoDsiplay=true
-	Exec=/home/akanksha/Qt5.7.0/Tools/QtCreator/bin/qtcreator %f
-	Icon=/home/akanksha/Qt5.7.0/5.7/Src/qtdoc/doc/images/landing/icon_QtCreator_78x78px.png
+	Exec=/home/$USER/Qt5.7.0/Tools/QtCreator/bin/qtcreator %f
+	Icon=/home/$USER/Qt5.7.0/5.7/Src/qtdoc/doc/images/landing/icon_QtCreator_78x78px.png
 	Name[en_US]=Qt-Creator"
 	echo $txt >> Qt-Creator.desktop
 	echo "text/qtcreator=Qt-Creator.desktop;" >> defaults.list
@@ -135,7 +135,7 @@ before_reboot(){
 	mkdir -p builds/unix
 	cd builds/unix && sudo rm -r *
 	cmake ../.. 
-	make && sudo make install
+	make -j4 && sudo make install
 
 	echo '======== Installing OSP-plugin ========'
 	cd ~/stellarium-0.15.2/plugins
@@ -151,7 +151,7 @@ before_reboot(){
 	git checkout az/alt-method
 	mkdir -p builds/unix
 	cd builds/unix && sudo rm -r * 
-	cmake ../.. 
+	cmake ../..
 
 }
 
