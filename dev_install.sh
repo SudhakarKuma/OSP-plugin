@@ -1,7 +1,9 @@
 #!/bin/sh
 	# Installation script for OSP-plugin for Ubuntu
 	# http://stellarium.sourceforge.net/wiki/index.php/Build_Dependencies_(Qt5)
-
+download_prompt(){
+	printf "Do you want to continue download? (press n if already downloaded correct version is available on system and copy the file to $HOME directory "
+}
 before_reboot(){
 	echo "Checking Internet connection ...... "
 	wget -q --tries=10 --timeout=20 --spider http://google.com
@@ -16,14 +18,20 @@ before_reboot(){
 	echo '======== Downloading qt for Linux ========'
 	MACHINE_TYPE=`uname -m`
 	if [ ${MACHINE_TYPE} == 'x86_64' ]; then
-		echo "Checking Internet connection ......"
-		wget -q --tries=10 --timeout=20 --spider http://google.com
-		while [[ $? -ne 0 ]] 
-		do
+		download_prompt
+		read input
+		if [[ $input == "Y" || $input == "y" ]]; then	
+			echo "Checking Internet connection ......"
 			wget -q --tries=10 --timeout=20 --spider http://google.com
-		done
-		wget http://download.qt.io/official_releases/qt/5.7/5.7.0/qt-opensource-linux-x64-5.7.0.run 
-		echo '======== Installing qt 5.7.0 ========'
+			while [[ $? -ne 0 ]] 
+			do
+				wget -q --tries=10 --timeout=20 --spider http://google.com
+			done
+			wget http://download.qt.io/official_releases/qt/5.7/5.7.0/qt-opensource-linux-x64-5.7.0.run 
+		else 
+			echo "Aborting download"
+	    fi
+	    echo '======== Installing qt 5.7.0 ========'
 		chmod 777 qt-opensource-linux-x64-5.7.0.run
 		./qt-opensource-linux-x64-5.7.0.run
 		echo "Setting environment variables for qt"
@@ -39,7 +47,13 @@ before_reboot(){
 		sudo sh -c "echo "/home/$USER/Qt5.7.0/5.7/gcc_64/bin">/usr/lib/x86_64-linux-gnu/qtchooser/default.conf"
 		sudo sh -c "echo "/home/$USER/Qt5.7.0/5.7/gcc_64/lib">>/usr/lib/x86_64-linux-gnu/qtchooser/default.conf"             
 	else	
-		wget http://download.qt.io/official_releases/qt/5.7/5.7.0/single/qt-everywhere-opensource-src-5.7.0.tar.gz
+		download_prompt
+		read input
+		if [[ $input == "Y" || $input == "y" ]]; then	
+			wget http://download.qt.io/official_releases/qt/5.7/5.7.0/single/qt-everywhere-opensource-src-5.7.0.tar.gz
+		else 
+			echo "Aborting download"
+		fi
 		gunzip qt-everywhere-opensource-src-5.7.0.tar.gz        # uncompress the archive
 		tar xvf qt-everywhere-opensource-src-5.7.0.tar          # unpack it
 		echo '========Installing build dependencies for qt========'	
@@ -87,11 +101,17 @@ before_reboot(){
 		do
 			wget -q --tries=10 --timeout=20 --spider http://google.com
 		done
-	       wget http://www.cmake.org/files/v3.5/cmake-3.5.1.tar.gz
-	       tar xzf cmake-3.5.1.tar.gz
-	       cd cmake-3.5.1
-	       ./configure --prefix=/opt/cmake
-	       make && sudo make install
+	    echo "Downloading Cmake-3.5.1 ..."
+		download_prompt
+		read input
+		if [[ $input == "Y" || $input == "y" ]]; then	
+			wget http://www.cmake.org/files/v3.5/cmake-3.5.1.tar.gz
+	    else 
+			echo "Aborting download"
+	    fi tar xzf cmake-3.5.1.tar.gz
+       	cd cmake-3.5.1
+       	./configure --prefix=/opt/cmake
+       	make && sudo make install
 		echo  "export PATH=/opt/cmake/bin:$PATH
 		export LD_LIBRARY_PATH=/opt/cmake/bin:$LD_LIBRARY_PATH">> ~/.bashrc
 				source  ~/.bashrc
@@ -129,7 +149,14 @@ before_reboot(){
 	do
 		wget -q --tries=10 --timeout=20 --spider http://google.com
 	done
-	wget http://sourceforge.net/projects/stellarium/files/Stellarium-sources/0.15.2/stellarium-0.15.2.tar.gz
+	echo "Downloading stellarium 0.15.2...."
+	download_prompt
+	read input
+	if [[ $input == "Y" || $input == "y" ]]; then	
+		wget http://sourceforge.net/projects/stellarium/files/Stellarium-sources/0.15.2/stellarium-0.15.2.tar.gz
+    else 
+		echo "Aborting download"
+    fi
 	tar xzf stellarium-0.15.2.tar.gz
 	cd ~/stellarium-0.15.2
 	mkdir -p builds/unix
@@ -146,7 +173,14 @@ before_reboot(){
 		wget -q --tries=10 --timeout=20 --spider http://google.com
 	done
 	printf 'y\n' | sudo apt-get install git
-	git clone https://github.com/SudhakarKuma/OSP-plugin 
+	echo "Downloading OSP-plugin repository...."
+	download_prompt
+	read input
+	if [[ $input == "Y" || $input == "y" ]]; then	
+		git clone https://github.com/SudhakarKuma/OSP-plugin 
+    else 
+		echo "Aborting download"
+    fi	
 	cd OSP-plugin
 	git checkout az/alt-method
 	mkdir -p builds/unix
