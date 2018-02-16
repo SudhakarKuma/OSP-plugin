@@ -15,7 +15,6 @@ before_reboot(){
 	printf 'y\n' | sudo apt-get install g++ wget
 
 	cd
-	
 	echo '======== Downloading qt for Linux ========'
 	MACHINE_TYPE=`uname -m`
 	if [ ${MACHINE_TYPE} == 'x86_64' ]; then
@@ -32,7 +31,7 @@ before_reboot(){
 		else 
 			echo "Aborting download"
 	    fi
-		echo '======== Installing qt 5.7.0 ========'
+	    echo '======== Installing qt 5.7.0 ========'
 		chmod 777 qt-opensource-linux-x64-5.7.0.run
 		./qt-opensource-linux-x64-5.7.0.run
 		echo "Setting environment variables for qt"
@@ -94,29 +93,28 @@ before_reboot(){
 	currentver="$(set `cmake -version`; echo $3)"
 	requiredver="3.5.1"
 	if [ "$(printf "$requiredver\n$currentver" | sort -V | head -n1)" == "$currentver" ] && [ "$currentver" != "$requiredver" ]; then 
-	    printf 'y\n' | sudo apt remove cmake
-	    cd
+	       printf 'y\n' | sudo apt remove cmake
+	       cd
 		echo "Checking Internet connection ...... "
 		wget -q --tries=10 --timeout=20 --spider http://google.com
 		while [[ $? -ne 0 ]] 
 		do
 			wget -q --tries=10 --timeout=20 --spider http://google.com
 		done
-		echo "Downloading Cmake-3.5.1 ..."
+	    echo "Downloading Cmake-3.5.1 ..."
 		download_prompt
 		read input
 		if [[ $input == "Y" || $input == "y" ]]; then	
 			wget http://www.cmake.org/files/v3.5/cmake-3.5.1.tar.gz
 	    else 
 			echo "Aborting download"
-	    fi
-        tar xzf cmake-3.5.1.tar.gz
+	    fi tar xzf cmake-3.5.1.tar.gz
        	cd cmake-3.5.1
        	./configure --prefix=/opt/cmake
        	make && sudo make install
 		echo  "export PATH=/opt/cmake/bin:$PATH
 		export LD_LIBRARY_PATH=/opt/cmake/bin:$LD_LIBRARY_PATH">> ~/.bashrc
-		source  ~/.bashrc
+				source  ~/.bashrc
 	 fi
 
 	echo '======== Creating Qt-Creator.desktop ========'
